@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni List</title>
+    <link rel="stylesheet" href="alumni.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Our Alumni Network</h1>
+            <div class="search-filter">
+                <input type="text" id="search-bar" placeholder="Search by name, batch, or company..." />
+                <select id="batch-filter">
+                    <option value="all">All Batches</option>
+                    <option value="2020">Batch of 2020</option>
+                    <option value="2021">Batch of 2021</option>
+                    <option value="2022">Batch of 2022</option>
+                </select>
+                <button onclick="filterAlumni()">Filter</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="alumni-list" class="alumni-container">
+            <!-- Alumni cards will be dynamically added here -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Alumni Association. All rights reserved.</p>
+    </footer>
+    <script src="alumni.js"></script>
+</body>
+</html>

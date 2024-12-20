@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Association - Chats</title>
+    <link rel="stylesheet" href="chats.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Alumni Association</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="alumni-list.html">Alumni List</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="chats.html" class="active">Chats</a></li>
+                <li><a href="event.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="chat-container">
+            <aside class="sidebar">
+                <h2>Chat Groups</h2>
+                <ul>
+                    <li>2020 Batch</li>
+                    <li>IT Department</li>
+                    <li>Job Seekers</li>
+                    <li>Reunion Planning</li>
+                    <li>Memories</li>
+                </ul>
+            </aside>
+
+            <div class="chat-area">
+                <div class="chat-header">
+                    <h2>2020 Batch Chat</h2>
+                    <p>Connect with batchmates and share memories!</p>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message sender">
+                        <p>Hey everyone! How’s it going?</p>
+                        <span class="timestamp">10:05 AM</span>
+                    </div>
+                    <div class="message receiver">
+                        <p>Hi! Doing great. Are you coming to the reunion?</p>
+                        <span class="timestamp">10:07 AM</span>
+                    </div>
+                </div>
+                <form class="chat-input" id="chatForm">
+                    <input type="text" id="chatMessageInput" placeholder="Type your message..." required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <aside class="sidebar-right">
+                <h2>Direct Messages</h2>
+                <ul>
+                    <li>
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <span>John Doe</span>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <span>Jane Smith</span>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <span>Mary Johnson</span>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Alumni Association. All rights reserved.</p>
+    </footer>
+
+    <script src="chats.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* alumni.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-filter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-filter input,
+.search-filter select,
+.search-filter button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-filter button {
+    background-color: white;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+.search-filter button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.alumni-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.alumni-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.alumni-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.alumni-card h3 {
+    margin: 10px 0 5px;
+}
+
+.alumni-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.alumni-card .contact-link {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    margin-top: 20px;
+}

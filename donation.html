@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation | Alumni Association</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Alumni Association</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="alumni.html">Alumni List</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="event.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Support the Alumni Association</h1>
+            <p>Your contributions make a difference in shaping our future.</p>
+        </section>
+
+        <section class="donation-goals">
+            <h2>Our Campaigns</h2>
+            <div class="goal-box">
+                <h3>Scholarships</h3>
+                <p>Help fund scholarships for underprivileged students.</p>
+                <!-- <button style="background-color:  #2196F3;border: none;" onclick="donate('Scholarships')">Donate</button> -->
+                <button style="background-color:  #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="donate('Research Grants')">Donate</button>
+
+            </div>
+            <div class="goal-box">
+                <h3>Infrastructure Development</h3>
+                <p>Support the construction of new labs and facilities.</p>
+                <!-- <button style="background-color:  #2196F3;border: none;" onclick="donate('Infrastructure Development')">Donate</button> -->
+                <button style="background-color:  #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="donate('Research Grants')">Donate</button>
+
+            </div>
+            <div class="goal-box">
+                <h3>Research Grants</h3>
+                <p>Encourage innovation and research through funding.</p>
+                <!-- <button style="background-color:  #2196F3; border: none;" onclick="donate('Research Grants')">Donate</button> -->
+                <button style="background-color:  #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;" onclick="donate('Research Grants')">Donate</button>
+
+            </div>
+        </section>
+
+        <section class="donation-form" id="donation-form-section">
+            <h2>Make a Donation</h2>
+            <form id="donation-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="purpose">Purpose:</label>
+                <select id="purpose">
+                    <option value="Scholarships">Scholarships</option>
+                    <option value="Infrastructure Development">Infrastructure Development</option>
+                    <option value="Research Grants">Research Grants</option>
+                </select>
+                <label for="amount">Amount (₹):</label>
+                <input type="number" id="amount" placeholder="Enter amount" required>
+                <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Donate Now</button>
+
+            </form>
+        </section>
+
+        <section class="impact">
+            <h2>Your Impact</h2>
+            <p>Past donations have helped:</p>
+            <ul>
+                <li>Fund scholarships for 100+ students.</li>
+                <li>Build a new library and research center.</li>
+                <li>Support groundbreaking research in AI and sustainability.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Alumni Association. All rights reserved.</p>
+    </footer>
+
+    <script src="donation.js"></script>
+</body>
+</html>

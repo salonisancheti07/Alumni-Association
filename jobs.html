@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Alumni Association</title>
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Alumni Association</div>
+            <ul class="nav-links">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="alumni.html">Alumni List</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="chats.html">Chats</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reunion.html">Reunion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jobs">
+            <h2>Job Opportunities</h2>
+            <div class="job-filters">
+                <input type="text" id="search-bar" placeholder="Search jobs..." onkeyup="filterJobs()">
+                <button onclick="showPostJobForm()">Post a Job</button>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="job-listings">
+                <!-- Job 1 -->
+                <div class="job-item" data-job-type="Full-time" data-location="New York">
+                    <h3>Software Developer</h3>
+                    <p><strong>Company:</strong> Tech Solutions Ltd.</p>
+                    <p><strong>Location:</strong> New York</p>
+                    <p><strong>Stipend:</strong> $5000/month</p>
+                    <p><strong>Requirements:</strong> Knowledge of JavaScript, React.js, Node.js, and MongoDB.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+                <!-- Job 2 -->
+                <div class="job-item" data-job-type="Internship" data-location="San Francisco">
+                    <h3>Data Analyst Intern</h3>
+                    <p><strong>Company:</strong> Data Insights Inc.</p>
+                    <p><strong>Location:</strong> San Francisco</p>
+                    <p><strong>Stipend:</strong> $3000/month</p>
+                    <p><strong>Requirements:</strong> Strong skills in data analysis tools, Excel, and SQL.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+                <!-- Job 3 -->
+                <div class="job-item" data-job-type="Full-time" data-location="Remote">
+                    <h3>UI/UX Designer</h3>
+                    <p><strong>Company:</strong> Creative Labs</p>
+                    <p><strong>Location:</strong> Remote</p>
+                    <p><strong>Stipend:</strong> $4500/month</p>
+                    <p><strong>Requirements:</strong> Proficiency in design tools like Figma, Sketch, and Adobe XD.</p>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+                <!-- More jobs can be added here -->
+            </div>
+        </section>
+
+        <!-- Post Job Form (Initially Hidden) -->
+        <section id="post-job-form" style="display: none;">
+            <h2>Post a Job</h2>
+            <form id="post-job">
+                <input type="text" id="company-name" placeholder="Company Name" required>
+                <input type="text" id="job-title" placeholder="Job Title" required>
+                <input type="text" id="job-location" placeholder="Location" required>
+                <input type="text" id="stipend" placeholder="Stipend/Salary" required>
+                <textarea id="requirements" placeholder="Job Requirements" required></textarea>
+                <button type="submit">Post Job</button>
+            </form>
+            <button onclick="closePostJobForm()">Close</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Alumni Association. All rights reserved.</p>
+    </footer>
+
+    <script src="jobs.js"></script>
+</body>
+</html>
